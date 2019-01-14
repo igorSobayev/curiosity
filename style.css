@@ -1,0 +1,76 @@
+@font-face {
+    font-family: robot;
+    src: url(fonts/th3_machine.ttf);
+}
+
+@font-face {
+    font-family: logo;
+    src: url(fonts/destructobeambb_reg.ttf);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenido {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+/* Estilo para el logo */
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+
+.logo {
+    padding-top: 15px;
+    width: 70px;
+    height: 70px;
+    background-image: url("../curiosity/imagenes/spray-final.png");
+    animation: rover 3s steps(6) infinite;
+
+}
+
+.texto-logo {
+    font-family: logo;
+    font-size: 2.3em;
+    vertical-align: middle;
+}
+
+@keyframes rover {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -420px;
+    }
+}
+
+
+/* Estilo para el menu */
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 120px;
+}
+
+.apartado {
+    width: 33%;
+    text-align: center;
+    line-height: 120px;
+    vertical-align: middle;
+}
+
+
