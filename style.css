@@ -173,10 +173,13 @@ nav a {
     width: 100%;
     height: 500px;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .draggable {
-    width: 120px;
+    width: 150px;
     height: 150px;
     padding: 0.5em;
     margin: 10px 10px 10px 0;
@@ -186,12 +189,46 @@ nav a {
     border: 0;
 }
 
-#curiosity { 
+.contenedor-draggable {
+    display: flex;
+}
+
+.contenedor-draggable #curiosity { 
     background-image: url(imagenes/curiosity.jpg);
  }
 
-#wall-e {
+.contenedor-draggable #wall-e {
     background-image: url(imagenes/wall-e.jpg);
  }
 
-#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+.contenedor-draggable #r2-d2 {
+    background-image: url(imagenes/r2.d2.jpg);
+}
+
+.contenedor-draggable #bb8 {
+    background-image: url(imagenes/bb8.jpg);
+}
+
+.droppable { 
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    margin: 10px;
+    font-size: 2em;
+}
+
+.contenedor-droppable {
+    display: flex;
+}
+
+ .contenedor-droppable .droppable {
+    background-image: url(imagenes/fondo-droppable.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .droppable p {
+     background-color: rgba(0, 0, 0, 0.61);
+     color: white;
+ }
