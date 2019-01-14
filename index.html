@@ -7,14 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curiosity</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1/jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body class="index">
     <div class="contenido">
         <header>
             <div class="contenedor-logo">
-                <a href="index.html"><div class="logo"></div></a>
-                <a href="index.html"><h1 class="texto-logo">curiosity</h1></a>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+                <a href="index.html">
+                    <h1 class="texto-logo">curiosity</h1>
+                </a>
             </div>
             <nav>
                 <a class="apartado" href="paginas/pasado.html">Pasado</a>
@@ -23,6 +31,55 @@
             </nav>
         </header>
 
+        <article class="introduccion">
+            <h1>La importancia de los robots</h1>
+            <section class="section-introduccion">
+                <p class="apartado-section">En nuestra vida cotidiana estamos acostumbrados a utilizar toda clase de
+                    Dispositivos Electrónicos que
+                    fundamentalmente tienen la complicada misión de solucionarnos o simplificarnos una gran cantidad de
+                    dificultades o problemas que tenemos, convirtiéndose entonces en una Herramienta de Trabajo más y
+                    en
+                    muchas ocasiones hasta nos permite reducir el Tiempo de Trabajo o bien incrementar notoriamente la
+                    Productividad y Rendimiento.
+                </p>
+                <div class="apartado-section">
+                    <div class="contenedor-imagen">
+                        <img src="imagenes/robot1.png">
+                    </div>
+                </div>
+                <h2>Los robots en la sociedad</h2>
+                <p class="apartado-section-sin-foto">Robot ipsum datus scan amet, constructor ad ut splicing elit, sed
+                    do errus
+                    mod tempor in conduit ut laboratory et deplore electromagna aliqua. Ut enim ad minimum veniam, quis
+                    no indestruct exoform ullamco laboris nisi ut alius equip ex ea commando evaluant. Duis ex machina
+                    aute ire dolorus in scan detectus an voluptate volt esse cesium dolore eu futile nulla parameter.
+                    Execute primus sint occaecat cupidatat non proident, sunt in culpa qui technia deserunt mondus anim
+                    id est proceus.</p>
+            </section>
+        </article>
+        <hr>
+        <article class="juego-index">
+            <h1>Los robos más famosos</h1>
+            <p class="apartado-juego">
+                A lo largo de la historia los seres humanos nos hemos sentido atraidos a imaginarnos hasta donde
+                llegarian
+                los robots, a raiz de esto se crearon cientos, si no miles de peliculas protagonizadas por robos.
+            </p>
+            <h2>Vamos a ver si conoces a alguno de los siguientes robots.</h2>
+            <h3>Une cada foto con su nombre</h3>
+
+            <div class="contenedor-juego">
+                <div class="contenedor-draggable">
+                    <div class="draggable" id="curiosity" class="ui-widget-content"></div>
+                    <div class="draggable" id="wall-e" class="ui-widget-content"></div>
+                </div>
+                <div class="contenedor-droppable">
+                    <div id="droppable" class="ui-widget-header">
+                        <p>Curiosity</p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
     </div>
 </body>
