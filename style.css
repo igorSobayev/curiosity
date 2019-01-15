@@ -156,6 +156,38 @@ nav a {
     height: 100%;
 }
 
+/* Estilo para las tarjetas del index */
+
+#tabs {
+    width: 50%;
+    margin: auto;
+}
+
+#tabs div {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#tabs div p {
+    margin: 40px 0 40px 0;
+    padding: 0 30px 0 30px;
+}
+
+.btn {
+    background-color: rgb(0, 132, 255);
+    color: white !important;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+    border-radius: 7%;
+}
+
+.btn:hover {
+    background-color: rgba(0, 132, 255, 0.726);
+    color: white;
+}
+
 
 /* Estilo para el juego index */
 
@@ -179,11 +211,11 @@ nav a {
 }
 
 .draggable {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     padding: 0.5em;
-    margin: 10px 10px 10px 0;
-    background-size: cover;
+    margin: 10px;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border: 0;
@@ -209,6 +241,10 @@ nav a {
     background-image: url(imagenes/bb8.jpg);
 }
 
+.contenedor-draggable #dalek {
+    background-image: url(imagenes/dalek.jpg);
+}
+
 .droppable { 
     width: 150px;
     height: 150px;
@@ -221,14 +257,15 @@ nav a {
     display: flex;
 }
 
- .contenedor-droppable .droppable {
+.contenedor-droppable .droppable {
     background-image: url(imagenes/fondo-droppable.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- }
+}
 
- .droppable p {
-     background-color: rgba(0, 0, 0, 0.61);
-     color: white;
- }
+.droppable p {
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+}
+

@@ -1,9 +1,10 @@
 $( function() {
-    var draggables = $( ".draggable" ).draggable();
+    var draggables = $( ".draggable" ).draggable({containment: ".contenedor-juego"});
 
     // Guardo el valor actual del elemento
     draggables.mousedown(function() {
         draggable_actual = $(this).attr("id");
+        draggable = $(this);
         console.log(draggable_actual);
     })
 
@@ -15,6 +16,7 @@ $( function() {
         switch(draggable_actual) {
             case droppable_actual:
                 $(this).css("background-image", "url(imagenes/correcto.png)");
+                draggable.css("visibility", "hidden");
         }/*
         if (droppable_actual == draggable_actual) {
             alert("WASUUUUUUU");
@@ -26,5 +28,11 @@ $( function() {
           .find( "#curiosity" )
         .html( "¡Genial, es Curiosity!" );*/
       }
+
+      
+    });
+
+    $( "#tabs" ).tabs({
+      collapsible: true
     });
   } );
