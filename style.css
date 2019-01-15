@@ -131,7 +131,7 @@ nav a {
     margin: 30px auto 0 auto;
     width: 80%;
     font-size: 1.5em;
-    text-align: justify;
+    text-align: center;
 } 
 
 .section-introduccion {
@@ -267,5 +267,30 @@ nav a {
 .droppable p {
     background-color: rgba(0, 0, 0, 0.61);
     color: white;
+}
+
+/* Estilo para acordeon pasado */
+
+.imagen-pasado-grande {
+    width: 500px;
+    height: 350px;
+}
+
+.retrato-hisashige {
+    width: 200px;
+    height: 150px;
+}
+
+.retrato-davinci {
+    width: 150px;
+    height: 100px;
+}
+
+#accordion div {
+    text-align: center;
+}
+
+#accordion {
+    margin-bottom: 50px;
 }
 
