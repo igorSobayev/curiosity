@@ -484,7 +484,7 @@ html>body #sortable li {
  }
 
 
- /*Tarjetas al pulsar girar*/
+ /*Tarjetas que giran al pulsar el boton girar en la pagina de futuro*/
 
 .giro-futuro .rotate-card-front {
     -webkit-transform: perspective(800px) rotateY(-180deg);
@@ -494,4 +494,70 @@ html>body #sortable li {
 .giro-futuro .rotate-card-back {
     -webkit-transform: perspective(800px) rotateY(0deg);
     transform: perspective(800px) rotateY(0deg);
+}
+
+/* Estilos al boton de futuro, un tamaño habitual y colores, ademas un hover*/
+.btn-futuro {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(141, 0, 0, 0.829);
+    color: white;
+    border: none;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.btn-futuro:hover {
+    background-color: rgba(0, 0, 179, 0.705);
+}
+
+/* Estilo para el texto de las tarjetas, utilizado principalmente para posicionar el contenido
+y darle un fondo negro con transparencia para apreciar la imagen de fondo */
+.contenido-tarjetas {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.contenido-tarjetas h2 {
+    margin-top: 0%;
+}
+
+/* Imagines para cada tarjeta*/
+#asimov {
+    background-image: url(imagenes/robot1_futuro.jpg);
+}
+
+#ai {
+    background-image: url(imagenes/robot2_futuro.png);
+}
+
+#machina {
+    background-image: url(imagenes/robot3_futuro.png);
+}
+
+#blogs {
+    background-image: url(imagenes/robot4_futuro.png);
+}
+
+#menu {
+    margin-bottom: 5px;
+}
+
+#opener {
+    display: inline;
+    cursor: pointer;
+}
+
+.back #accordion {
+    margin-bottom: 5px;
 }

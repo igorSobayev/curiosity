@@ -1,0 +1,13 @@
+El funcionamiento de la web es sencillo, en la página principal tienes información
+sobre el contenido general de la web. El logo de arriba es una animación con spray.
+La funcionalidad del index esta en las tarjetas que permiten viajar a las diferentes
+páginas y el juego al final de index que consiste en arrastar cada foto con el nombre 
+del robot, si no aciertas vuelve a su posicion original.
+
+En la página del pasado tienes un acordeon con los inventos por fechas.
+
+En la página de presente tienes 8 robots actuales realizados con giros 3D. Ademas
+abajo del todo puedes colocarlos en el orden que tu quieras.
+
+Finalmente en el futuro he tratado temas variados utilizando tarjetas para girar al pulsar
+con diferentes funcionalidades JQuery detrás de cada una de ellas.

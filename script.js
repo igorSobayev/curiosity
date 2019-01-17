@@ -99,4 +99,30 @@ $(function () {
     $parent.children(".back").toggleClass(" rotate-card-back");
   });
 
+
+  /* Codigo extraido de la pagina de Jquery para hacer funcionar el menu implementado
+  en una de las tarjetas de la pagina de futuro*/
+  $( "#menu" ).menu({
+    items: "> :not(.ui-widget-header)"
+  });
+
+
+  /* Codigo extraido de la web de JQuery para utilizar en una de las tarjetas y hacer que aparezca
+  un dialogo al pulsar sobre una imagen */
+  $( "#dialog" ).dialog({
+    autoOpen: false,
+    show: {
+      effect: "blind",
+      duration: 1000
+    },
+    hide: {
+      effect: "explode",
+      duration: 1000
+    }
+  });
+
+  $( "#opener" ).on( "click", function() {
+    $( "#dialog" ).dialog( "open" );
+  });
+
 });
