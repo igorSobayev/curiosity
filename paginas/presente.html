@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="../jquery-ui-1.12.1/jquery-ui.min.css">
     <script src="../jquery-ui-1.12.1/jquery-3.3.1.min.js"></script>
     <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body class="presente">
     <div class="contenido">
         <header>
             <div class="contenedor-logo">
-                <a href="../index.html"><div class="logo"></div></a>
-                <a href="../index.html"><h1 class="texto-logo">curiosity</h1></a>
+                <a href="../index.html">
+                    <div class="logo"></div>
+                </a>
+                <a href="../index.html">
+                    <h1 class="texto-logo">curiosity</h1>
+                </a>
             </div>
             <nav>
                 <a class="apartado" href="pasado.html">Pasado</a>
@@ -25,7 +30,155 @@
                 <a class="apartado" href="futuro.html">Futuro</a>
             </nav>
         </header>
-        <h1>Soy el presente</h1>
+        <h1>Bienvenido al presente</h1>
+        <article class="introduccion">
+            <h2>Conoce a los 8 robots más cercanos a la inteligencia artificial</h2>
+            <div class="tarjetas">
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>Atlas</h2>
+                        <p>Un robot impresionante, casi como un Terminator. Atlas, está creado para participar en
+                            operaciones de rescate o búsqueda y, para ello tiene una fuerza impresionante y, la
+                            capacidad de tomar decisiones acerca de cómo proceder.</p>
+                        <p>
+                            Para funcionar sin requerir que lo controle un humano, posee una computadora interna que
+                            recibe y procesa la información que entregan las cámaras y sensores presentes en el robot
+                        </p>
+                    </div>
+                    <div class="front" id="atlas"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>RHex</h2>
+                        <p>
+                            De tamaño pequeño, las capacidades de RHex no son para nada inferiores. Capaz de moverse
+                            por lugares donde un robot más grande no podría, posee seis piernas con un diseño
+                            especiales, lo que le permite escalar y funcionar hasta en los terrones más difíciles.
+                        </p>
+                        <p>
+                            Su tamaño y resistencia hasta a las condiciones más adversas, le permite moverse en zonas
+                            de acceso imposible para humanos y otros robots más grandes y, gracias a sus cámaras,
+                            entrega una visión a distancia para su control.
+                        </p>
+                    </div>
+                    <div class="front" id="rhex"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>Baxter</h2>
+                        <p>
+                            De apariencia muy amigable, Baxter está creado para trabajar codo a codo con las personas
+                            en una serie de funciones productivas. Según sus creadores, este simpático Androide posee
+                            “sentido común”, lo que le permite adaptarse a cada función y ambiente de trabajo.
+                        </p>
+                        <p>
+                            Baxter, no requiere de programación complicada, sino que aprende y puede ser entrenado. Su
+                            tamaño es similar al de una persona y, no requiere de intervención de expertos, lo que le
+                            da un plus importante.
+                        </p>
+                    </div>
+                    <div class="front" id="baxter"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>Amphibious Snake</h2>
+                        <p>
+                            Un robot que trabaja bajo el agua y, que puede ajustarse según necesidad, ya sea agregando
+                            módulos para alargarlo, quitando para acortarlo o, añadir los sensores necesarios para cada
+                            trabajo.
+                        </p>
+                        <p>
+                            Amphibious Snake, puede trabajar en agua o tierra e, incluso dentro de tu cuerpo. Se está
+                            trabajando en ajustarlo a un tamaño lo suficientemente pequeño para asistir en cirugías,
+                            ello gracias a su movimiento controlable a distancia y la posibilidad de enviar imágenes de
+                            forma inalámbrica.
+                        </p>
+                    </div>
+                    <div class="front" id="snake"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>Rise</h2>
+                        <p>
+                            Un robot capaz de escalar superficies completamente planas, como por ejemplo edificios o
+                            paredes muy altas. Rise, posee sensores que le permiten ajustar sus movimientos y seguir
+                            funcionando, no importa lo complicado que sea.
+                        </p>
+                        <p>
+                            De tamaño más bien pequeño, Rise es por ahora un experimento para ver si, utilizando sus
+                            sensores, es capaz de controlar su cuerpo por sí mismo.
+                        </p>
+                    </div>
+                    <div class="front" id="rise"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>SandFlea</h2>
+                        <p>
+                            Parece un auto a control remoto, pero se trata de un vehículo inteligente capaz escalar
+                            terrenos complicados e incluso saltar distancias de hasta 9 metros, todo ello mientras se
+                            estabiliza automáticamente, enviando información desde la cámara que tiene incorporada.
+                        </p>
+                        <p>
+                            SandFlea está pensado para su uso militar y, actualmente, es capaz de realizar hasta 25
+                            saltos con una sola carga de batería.
+                        </p>
+                    </div>
+                    <div class="front" id="sandflea"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>Big Dog</h2>
+                        <p>
+                            Su nombre se debe a su apariencia similar a la de un perro. Big Dog es un robot que, en
+                            cuatro patas, es capaz de moverse evitando o pasando por sobre obstáculos, no importa si
+                            son piedras o hielo.
+                        </p>
+                        <p>
+                            Capaz de cargar con 150 kilos de peso, nunca pierde dirección o estabilidad, ello debido a
+                            que la computadora que lleva dentro, toma información de sus sensores incorporados para
+                            guiarlos. Big Dog está pensado para el uso militar.
+                        </p>
+                    </div>
+                    <div class="front" id="dog"></div>
+                </div>
+                <div class="flip3D">
+                    <div class="back">
+                        <h2>WildCat</h2>
+                        <p>
+                            Capaz de moverse a más de 25 kilómetros por hora, WildCat puede parecer un poco abultado,
+                            pero justamente es esa corpulencia lo que le permite ser de gran ayuda para el uso militar.
+                        </p>
+                        <p>
+                            Corre imitando a los animales y, lo que no tiene en agilidad, si lo posee en rapidez,
+                            sobrepasando a los humanos y, gracias a su GPS, es capaz de orientarse por varios
+                            kilómetros sin compañía. WildCat, puede cargar más de 180 kilos, suficiente para ser un
+                            aliado importante.
+                        </p>
+                    </div>
+                    <div class="front" id="cat"></div>
+                </div>
+            </div>
+
+            <h2>Espero que hayas disfrutado</h2>
+            <h4>Ahora que eres un experto en los robots más punteros de la actualidad, ¿que tal si jugamos a un juego?</h4>
+            <h3>Ordena los robots en el orden que más te guste</h3>
+            <ul id="sortable">
+                <li class="ui-state-default">ATLAS</li>
+                <li class="ui-state-default">RHex</li>
+                <li class="ui-state-default">Baxter</li>
+                <li class="ui-state-default">Amphibious Snake</li>
+                <li class="ui-state-default">Rise</li>
+                <li class="ui-state-default">SandFlea</li>
+                <li class="ui-state-default">Big Dog</li>
+                <li class="ui-state-default">WildCat</li>
+            </ul>
+            <hr>
+            <h1>Creo que es el momento de ver lo que nos espera</h1>
+            <a class="btn" href="futuro.html">Viajar al futuro</a>
+            <h3>Tambíen puedes volver al inicio</h3>
+            <a class="btn" href="../index.html">Volver al índice</a>
+        </article>
     </div>
 </body>
 

@@ -294,3 +294,103 @@ nav a {
     margin-bottom: 50px;
 }
 
+
+/* Estilo tarjetas presente */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.flip3D {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+.flip3D>.front {
+    position: absolute;
+    transform: perspective( 1200px) rotateY( 0deg);
+    background: #FC0;
+    width: 400px;
+    height: 300px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flip3D>.back {
+    position: absolute;
+    transform: perspective( 1200px) rotateY( 180deg);
+    background: #80BFFF;
+    width: 400px;
+    height: 300px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    font-size: 0.7em;
+}
+
+.flip3D:hover>.front {
+    transform: perspective( 600px) rotateY( -180deg);
+}
+
+.flip3D:hover>.back {
+    transform: perspective( 600px) rotateY( 0deg);
+}
+
+#atlas {
+    background-image: url(imagenes/robot1_presente.jpg);
+}
+
+#rhex {
+    background-image: url(imagenes/robot2_presente.JPG);
+}
+
+#baxter {
+    background-image: url(imagenes/robot3_presente.jpg);
+}
+
+#snake {
+    background-image: url(imagenes/robot4_presente.jpg);
+}
+
+#rise {
+    background-image: url(imagenes/robot5_presente.jpg);
+}
+
+#sandflea {
+    background-image: url(imagenes/robot6_presente.jpg);
+}
+
+#dog {
+    background-image: url(imagenes/robot7_presente.JPG);
+}
+
+#cat {
+    background-image: url(imagenes/robot8_presente.jpg);
+}
+
+/* Estilo juego abajo */
+
+
+#sortable { 
+    list-style-type: none;
+    margin: auto; 
+    padding: 0; 
+    width: 60%; }
+#sortable li {
+     margin: 0 5px 5px 5px; 
+     padding: 5px; 
+     font-size: 1.2em; 
+     height: 1.5em; }
+html>body #sortable li { 
+    height: 1.5em; 
+    line-height: 1.2em; }
+.ui-state-highlight { 
+    height: 1.5em; 
+    line-height: 1.2em; }
