@@ -7,17 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curiosity</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <link rel="icon" type="image/png" href="imagenes/mars-rover.png">
     <link rel="stylesheet" href="../jquery-ui-1.12.1/jquery-ui.min.css">
     <script src="../jquery-ui-1.12.1/jquery-3.3.1.min.js"></script>
     <script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body class="futuro">
     <div class="contenido">
         <header>
             <div class="contenedor-logo">
-                <a href="../index.html"><div class="logo"></div></a>
-                <a href="../index.html"><h1 class="texto-logo">curiosity</h1></a>
+                <a href="../index.html">
+                    <div class="logo"></div>
+                </a>
+                <a href="../index.html">
+                    <h1 class="texto-logo">curiosity</h1>
+                </a>
             </div>
             <nav>
                 <a class="apartado" href="pasado.html">Pasado</a>
@@ -26,6 +32,63 @@
             </nav>
         </header>
         <h1>Soy el futuro</h1>
+
+        <article class="introduccion">
+            <div class="tarjetas">
+                <div class="flip3D giro-futuro">
+                    <div class="back">
+                        <h2>Atlas</h2>
+                        <p>Un robot impresionante, casi como un Terminator. Atlas, está creado para participar en
+                            operaciones de rescate o búsqueda y, para ello tiene una fuerza impresionante y, la
+                            capacidad de tomar decisiones acerca de cómo proceder.</p>
+                        <p>
+                            Para funcionar sin requerir que lo controle un humano, posee una computadora interna que
+                            recibe y procesa la información que entregan las cámaras y sensores presentes en el robot
+                        </p>
+                        <button class="girar">Vuelvo</button>
+                    </div>
+                    <div class="front">
+                        <div class="contenido-tarjetas">
+                            <h2>Leyes de la robotica</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <button class="girar">Girame</button>
+                    </div>
+                </div>
+                <div class="flip3D giro-futuro">
+                    <div class="back">
+                        <h2>RHex</h2>
+                        <p>
+                            De tamaño pequeño, las capacidades de RHex no son para nada inferiores. Capaz de moverse
+                            por lugares donde un robot más grande no podría, posee seis piernas con un diseño
+                            especiales, lo que le permite escalar y funcionar hasta en los terrones más difíciles.
+                        </p>
+                        <p>
+                            Su tamaño y resistencia hasta a las condiciones más adversas, le permite moverse en zonas
+                            de acceso imposible para humanos y otros robots más grandes y, gracias a sus cámaras,
+                            entrega una visión a distancia para su control.
+                        </p>
+                    </div>
+                    <div class="front" id="rhex"></div>
+                </div>
+                <div class="flip3D giro-futuro">
+                    <div class="back">
+                        <h2>Baxter</h2>
+                        <p>
+                            De apariencia muy amigable, Baxter está creado para trabajar codo a codo con las personas
+                            en una serie de funciones productivas. Según sus creadores, este simpático Androide posee
+                            “sentido común”, lo que le permite adaptarse a cada función y ambiente de trabajo.
+                        </p>
+                        <p>
+                            Baxter, no requiere de programación complicada, sino que aprende y puede ser entrenado. Su
+                            tamaño es similar al de una persona y, no requiere de intervención de expertos, lo que le
+                            da un plus importante.
+                        </p>
+                    </div>
+                    <div class="front" id="baxter"></div>
+                </div>
+            </div>
+        </article>
     </div>
 </body>
 

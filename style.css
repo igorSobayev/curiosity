@@ -1,3 +1,4 @@
+/* Importo las dos fuentes que utilizo en la pagina*/
 @font-face {
     font-family: robot;
     src: url(fonts/th3_machine.ttf);
@@ -8,6 +9,11 @@
     src: url(fonts/destructobeambb_reg.ttf);
 }
 
+/* Estilos para el body donde establezco un tamaño de fuente de 16px
+    un font-family predeterminado quito el tanto el padding como el margin y aplico
+    los estilos globales para el fondo debido a que utilizo una imagen diferente
+    para cada pagina pero con las mismas propiedades
+    que este estatica, centrada y ocupe toda la parte de atras*/
 body {
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -18,14 +24,17 @@ body {
     background-size: cover;
 }
 
+/* Centro los titulos */
 h1, h2 {
     text-align: center;
 }
 
+/* Aplico un margin por arriba y por abajo de los hr */
 hr {
     margin: 40px 0 40px 0;
 }
 
+/* Doy a cada pagina una imagen de fondo diferente */
 .index {
     background-image: url(imagenes/index.jpg);
 }
@@ -42,15 +51,23 @@ hr {
     background-image: url(imagenes/futuro.jpg);
 }
 
+/* Doy estilo al contenedor donde va a ir todo el contenido, ocupa el 80% de la vista
+y esta centrado */
 .contenido {
-    border: 1px solid black;
     width: 80%;
     margin: 0 auto 40px auto;
     background-color: white;
     padding-bottom: 40px;
 }
 
-/* Estilo para el logo */
+/* Estilo para el logo
+
+    Para crear el logo creo un contenedor que va a contenedor
+    una imagen con el logo y el texto, la imagen es un spray animado
+    que he creado yo utilizando un imagen png extraida de una web 
+    y he ido recortando partes y haciendolo animado
+    El texto tiene una fuente extraida de 1001fonts
+    He utilizado flex para posicionarlos en el centro */
 
 .contenedor-logo {
     display: flex;
@@ -63,6 +80,7 @@ hr {
     text-decoration: none;
 }
 
+/* Aplico una animacion a la imagen para crear el efecto de que se mueve */
 .logo {
     padding-top: 15px;
     width: 70px;
@@ -78,6 +96,7 @@ hr {
     vertical-align: middle;
 }
 
+/* animacion para la imagen*/
 @keyframes rover {
     from {
         background-position: 0px;
@@ -89,7 +108,11 @@ hr {
 }
 
 
-/* Estilo para el menu */
+/* Estilo para el menu
+    Para realizar el menu utilice una etiqueta nav con tres enlaces que te llevan
+    a las diferentes paginas y les aplique flex-box para posicionarlas. Estan colocados en 
+    columnas y centrados en su contenedor
+ */
 
 nav {
     display: flex;
@@ -99,6 +122,8 @@ nav {
     margin: 10px 0 15px 0;
 }
 
+/* Estilos para centrar los elementos y hacer que ocupen el tamaño adecuado
+    tambien aplico una transition para hacer el efecto hover mas suave y elegante*/
 .apartado {
     width: 33.33%;
     text-align: center;
@@ -114,6 +139,7 @@ nav {
     transition: all 0.4s ease-in;
 }
 
+/* Quito los estilos a los enlaces*/
 nav a {
     color: black;
     text-decoration: none;
@@ -125,7 +151,13 @@ nav a {
 }
 
 
-/* Estilo para el contenido */
+/* Estilo para el contenido
+
+    Para hacer todo el contenido creo un article que le aplico los estilos apropiados
+    El contenido va a ocupar el 80% del contenedor de contenido (el contenedor blanco) y estara
+    centrado. 
+    Dentro del article tengo un section con la informacion y al cual le dare un display flex
+    para colocarlo de forma mas comoda. Todo el contenido va centrado*/
 
 .introduccion {
     margin: 30px auto 0 auto;
@@ -156,7 +188,11 @@ nav a {
     height: 100%;
 }
 
-/* Estilo para las tarjetas del index */
+/* Estilo para las tarjetas del index
+
+    Tendran un tamaño del 50% y estaran centradas, cada tarjeta tiene el contenido centrado
+    con un padding abajo de 15px. El texto tendra su margin y padding propio para dejarlo mas centrado
+    */
 
 #tabs {
     width: 50%;
@@ -173,6 +209,9 @@ nav a {
     padding: 0 30px 0 30px;
 }
 
+/* Estilos para el boton utilizado en todas las paginas que tendra un color azul de fondo 
+    y el texto de color blanco, ademas aplico un hover que simplemente hace mas claro el fondo para
+    dar un efecto sutil de que estas haciendo hover.*/
 .btn {
     background-color: rgb(0, 132, 255);
     color: white !important;
@@ -189,7 +228,12 @@ nav a {
 }
 
 
-/* Estilo para el juego index */
+/* Estilo para el juego index
+
+    Aqui guardo todo el juego junto con las instrucciones en el contenedor .juego-index
+    que ocupa el 80% del contenedor blanco y esta centado. Las instrucciones tienen un tamaño
+    mayor con 1.3em
+    */
 
 .juego-index {
     width: 80%;
@@ -201,6 +245,10 @@ nav a {
     font-size: 1.3em;
 }
 
+/* Estilos para posicionar el contenedor del juego que va a ocupar el 100% de su contenedor
+padre con un ancho de 500px, ademas tiene un display flex para que los elementos interiores
+(2 elementos uno para los draggables y otro para los droppables) esten colocados uno arriba
+y otro abajo*/
 .contenedor-juego {
     width: 100%;
     height: 500px;
@@ -210,6 +258,8 @@ nav a {
     justify-content: center;
 }
 
+/* Los draggables tienen un tamaño predeterminado y los estilos globales del fondo
+para todos los draggables pero cada draggable tiene una imagen de fondo diferente */
 .draggable {
     width: 170px;
     height: 170px;
@@ -221,10 +271,12 @@ nav a {
     border: 0;
 }
 
+/* Coloco todos los elementos seguidos uno detras de otro */
 .contenedor-draggable {
     display: flex;
 }
 
+/* Doy las imagenes correspondientes a cada fondo */
 .contenedor-draggable #curiosity { 
     background-image: url(imagenes/curiosity.jpg);
  }
@@ -245,6 +297,8 @@ nav a {
     background-image: url(imagenes/dalek.jpg);
 }
 
+/* Los droppables tienen un tamaño predeterminado de 150px y estan colocados de la misma
+forma que los draggables con un display flex*/
 .droppable { 
     width: 150px;
     height: 150px;
@@ -257,6 +311,8 @@ nav a {
     display: flex;
 }
 
+/* Aplico estilos para todos los dropabbles que tendran una imagen de fondo de una interrogacion
+hasta que haciertes y entonces cambia por otra imagen*/
 .contenedor-droppable .droppable {
     background-image: url(imagenes/fondo-droppable.jpg);
     background-size: cover;
@@ -269,7 +325,12 @@ nav a {
     color: white;
 }
 
-/* Estilo para acordeon pasado */
+/* Estilo para acordeon del pasado
+
+    Estos estilos son principalmente para las imagenes del interior de cada
+    parte del acordeon porque tienen un tamaño grande y tambien para centrar el texto
+
+*/
 
 .imagen-pasado-grande {
     width: 500px;
@@ -295,7 +356,13 @@ nav a {
 }
 
 
-/* Estilo tarjetas presente */
+/* Estilo tarjetas del presente
+
+    Son los estilos utilizados para la pagina del presente
+    que tiene una foto de un robot por delante y por detras
+    la informacion relacionada con el. Estan contenidas en un contenedor que es
+    flex-box para colocarlas todas seguidas, el contenedor ocupa el 90% del contenido
+    y esta centrado*/
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -303,16 +370,21 @@ nav a {
     width: 90%;
     margin: auto;
 }
+
+/* Estilos utilizados para dar formato a las tarjetas, utilizando estilos
+parecidos a los colgados en clase para explicar transformaciones
+pero modificados y adaptados a mi gusto, cambio el tamaño de los elementos
+les pongo imagen de fondo y aumento la perspectiva*/
 .flip3D {
     width: 400px;
     height: 300px;
     margin: 10px;
 }
-
+/* Estilos globales para los fondos pero cada fondo tiene su propia todo
+Estaran centrados, no se repetiran y ocuparan todo el contenedor*/
 .flip3D>.front {
     position: absolute;
     transform: perspective( 1200px) rotateY( 0deg);
-    background: #FC0;
     width: 400px;
     height: 300px;
     border-radius: 7px;
@@ -326,7 +398,7 @@ nav a {
 .flip3D>.back {
     position: absolute;
     transform: perspective( 1200px) rotateY( 180deg);
-    background: #80BFFF;
+    background: rgba(112, 255, 200, 0.699);
     width: 400px;
     height: 300px;
     border-radius: 7px;
@@ -335,6 +407,17 @@ nav a {
     font-size: 0.7em;
 }
 
+/* Estilo para que solo giren las imagenes del presente al hacerles hover
+debido a que reutilizo el codigo de las tarjetas para implementar que las tarjetas giren
+al pulsar en la pagina de futuro */
+.giro-presente:hover > .front {
+    transform: perspective( 800px) rotateY( -180deg);
+}
+
+.giro-presente:hover > .back {
+    transform: perspective( 800px) rotateY( 0deg);
+}
+/*
 .flip3D:hover>.front {
     transform: perspective( 600px) rotateY( -180deg);
 }
@@ -342,7 +425,8 @@ nav a {
 .flip3D:hover>.back {
     transform: perspective( 600px) rotateY( 0deg);
 }
-
+*/
+/* Imagenes de fondo para las tarjetas que giran */
 #atlas {
     background-image: url(imagenes/robot1_presente.jpg);
 }
@@ -375,22 +459,39 @@ nav a {
     background-image: url(imagenes/robot8_presente.jpg);
 }
 
-/* Estilo juego abajo */
-
+/* Estilo juego de presente abajo del todo
+    Estilos extraidos de la pagina de JQuery UI */
 
 #sortable { 
     list-style-type: none;
     margin: auto; 
     padding: 0; 
-    width: 60%; }
+    width: 60%; 
+}
 #sortable li {
      margin: 0 5px 5px 5px; 
      padding: 5px; 
-     font-size: 1.2em; 
-     height: 1.5em; }
+     font-size: 1.4em; 
+     height: 1.5em; 
+}
 html>body #sortable li { 
     height: 1.5em; 
-    line-height: 1.2em; }
+    line-height: 1.2em;
+ }
 .ui-state-highlight { 
     height: 1.5em; 
-    line-height: 1.2em; }
+    line-height: 1.2em;
+ }
+
+
+ /*Tarjetas al pulsar girar*/
+
+.giro-futuro .rotate-card-front {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+}
+
+.giro-futuro .rotate-card-back {
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+}
